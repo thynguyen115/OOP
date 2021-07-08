@@ -1,15 +1,4 @@
-import HandlerRank
-
-
-##################################
-#       Call's conversation      #
-##################################
-def reply_message():
-    print("Hello, how can I help you?")
-
-
-def end_call():
-    print("Thank you for calling")
+from HandlerRank import HandlerRank
 
 
 class Call:
@@ -49,3 +38,12 @@ class Call:
         else:
             self.handler_rank = None  # cannot increment anymore
         return self.handler_rank
+
+    ##################################
+    #       Call's conversation      #
+    ##################################
+    def reply_message(self):
+        print("Hello, how can I help you?")
+
+    def end_call(self):
+        print("Thank you for calling")
